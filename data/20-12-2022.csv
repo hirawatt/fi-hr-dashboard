@@ -1,3 +1,8 @@
-Number,Name,Positivity Score, Appreciation Shared, Motivation, Meditations,Team, Mood
-1, Abhinav, 3, 5, 9, 10, HR, joy
-2, Nishant, 4, 6, 7, 12, Finance, angry
+Number,Name,Positivity Score, Appreciation Shared, Motivation, Meditations per month,Team, Mood
+1, John, 3, 5, 9, 10, HR, joy
+2, Mike, 4, 6, 7, 12, Finance, angry
+3, Gill, 8, 4, 7, 2, Technology, joy
+4, Jack, 9, 2, 7, 22, HR, joy
+5, Carry, 10, 7, 3, 2, Finance, happy
+6, Tina, 4, 6, 8, 19, Sales, angry
+7, Rocky, 1, 5, 6, 17, Sales, fear

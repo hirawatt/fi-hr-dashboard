@@ -16,7 +16,7 @@ team = ['HR', 'Finance', 'Marketing', 'Sales', 'Technology', 'Management']
 
 # Data Import
 df = pd.read_csv("./data/20-12-2022.csv")
-with st.expander("Mock Data", expanded=True):
+with st.expander("Mock Data", expanded=False):
     st.write(df)
 
 p_score = df['Positivity Score']
@@ -25,10 +25,6 @@ p_score = df['Positivity Score']
 co1, co2 = st.columns(2)
 teams = co1.multiselect("Teams", df['Team'], default = df['Team'])
 people = co2.multiselect("Employee", df['Name'], default = df['Name'])
-
-# Data Analysis
-col1, col2, col3 = st.columns(3)
-col1.bar_chart(df.iloc[:, 3])
 
 # Heatmap
 
@@ -50,3 +46,10 @@ fig = go.Figure(go.Indicator(
                 {'range': [7, 10], 'color': "lightgreen"}]}))
 
 st.plotly_chart(fig, use_container_width=True)
+
+# Data Analysis
+col1, col2 = st.columns(2)
+col1.bar_chart(df.iloc[:, 3])
+col2.bar_chart(df.iloc[:, 4])
+
+st.bar_chart(df.iloc[:, 5])
